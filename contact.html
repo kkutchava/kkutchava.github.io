@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact | Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <link rel = "icon" type = "image/png" href = "imgs/3004-15.jpg">
+
+    <style>
+         .img {
+            max-width: 500px;
+            }
+
+        .tbl {
+            border: 3px solid rgb(87, 49, 10);
+            padding: 15px;
+            background-color: antiquewhite;
+        }
+
+        .smth {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        #msg {
+            margin: 15px;
+            resize: none;
+        }
+
+        #nm, #eml {
+            width: 200px;
+            margin: 15px;
+            width: 250px;
+            height: 25px;
+        }
+
+        #btn {
+            width: 95px;
+            height: 30px;
+            margin: 15px;
+        }
+
+        .lbl {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .ppar{
+            font-weight: bold;
+        }
+
+         .pchild {
+            font-weight: normal;
+        }
+
+         @media(max-width: 1075px) {
+            .smth {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Archive</div>
+            <ul class="nav">
+                <li class="toggle"><i class="fa fa-bars"></i></li>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="join.html">Join</a></li>
+                <li class="links"><a href="About.html">About</a></li>
+                <li class="links"><a href="contact.html">Contact</a></li>
+                <li class="links"><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="smth">
+        <!-- found on internet in free wvdomashi iyo.. I belive -->
+        <div><img src="imgs/contact.png" alt="contact image here" class="img"></div>
+        <div class="frm">
+            <div class="tbl">
+                <h1>Reach out!</h1>
+                <form method="get" id="form">
+                            <label for="nm" class="lbl">Your Name</label>
+                            <input type="text" id="nm" placeholder="Enter Your Name"/>
+                            <br>
+                            <label for="eml" class="lbl">Your Email</label>
+                            <input type="email" id="eml" placeholder="Enter Your E-mail Address">
+                            <br>
+                            <label for="msg" class="lbl">Message</label>
+                            <textarea id="msg" name="msgbox" rows="6" cols="40" placeholder="Enter Your Message here"></textarea>
+                            <br>
+                            <label for="btn" class="lbl">Send it!</label>
+                            <button id="btn">Send it to us!</button>
+
+                </form>
+            </div>
+                <br><br>
+                <p class="ppar">
+                    Mailing Address:
+                </p>
+                <p class="pchild">Neverplace in Neverland<br>
+                    XX Neverstreet, Xth neverfloor<br>
+                    Nevercity, XXXX, Nevercountry<br>
+                </p>
+                <p class="ppar">
+                    Phone:
+                </p>
+                <p class="pchild">
+                    +XXX XX X XXX XXX<br>
+                </p>
+                <p class="ppar">
+                    E-mail:
+                    </p>    
+                <p class="pchild">
+                    neverName@nevermail.never <br>
+                </p>
+        </div>
+    </div>
+    <br>
+    <footer class="footer">
+        <div class="container">&copy; 2022 copyright message here </div>
+    </footer>
+</body>
+</html>
